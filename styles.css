@@ -1,11 +1,30 @@
-.box {
 
-max-width: 200px;
-height: 200px;
-background-color: red;
-border: 15px solid red;
-padding: 15px, 15px, 15px, 15px;
-margin: 15px;
-box-sizing: border-box;
+div{
+    transition: background-color 400ms;
+}
+
+div:hover {
+
+        background-color: purple
+
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+button {
+    animation: float 2000ms alternate-reverse infinite;
+    transition: all 400ms;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(10px);
+    }
 
 }
